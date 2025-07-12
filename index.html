@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 568px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
+  <script src="mobile.js" defer></script>
+</head>
+
+<body>
+  <div class="greenday-matcher">
+    <h2>🎶 What Green Day Song Matches Your Mood?</h2>
+    <label for="mood-input">How are you feeling today?</label>
+    <input type="text" id="mood-input" placeholder="e.g., rebellious, sad, pumped" />
+    <button onclick="suggestSong()">Find My Song</button>
+    <p id="song-result"></p>
+  </div>
+
+  <!-- Template Credit -->
+  <div class="template-credit">
+    Template inspired by
+    <a href="https://rannah.goldenfab.com/" target="_blank">Rannah by GoldenFab</a>
+  </div>
+
+  <!-- Header -->
+  <div id="header">
+    <a href="index.html" class="logo">
+      <img src="images/greendaylogo.jpg" alt="Green Day Logo" />
+    </a>
+    <ul id="navigation">
+      <li class="selected"><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="gallery.html">gallery</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Banner Image -->
+  <div id="main-banner">
+    <img src="images/greenday-banner.jpg" alt="Green Day Band" />
+  </div>
+
+  <!-- Intro Section -->
+  <section class="welcome-text">
+    <h2>Welcome to Green Day Universe</h2>
+    <p>
+      Dive into the punk rock revolution with Green Day — the band that gave us
+      "American Idiot," "Basket Case," and anthems of rebellion and youth.
+    </p>
+    <p>
+      Explore their story, music, and the iconic trio behind the movement:
+      Billie Joe Armstrong, Mike Dirnt, and Tré Cool.
+    </p>
+  </section>
+
+  <!-- Band Members Preview -->
+  <ul class="character-gallery">
+    <li>
+      <img src="images/billiejoe.jpg" alt="Billie Joe Armstrong" class="character-image" />
+      <span>Billie Joe Armstrong</span>
+    </li>
+    <li>
+      <img src="images/mike.jpg" alt="Mike Dirnt" class="character-image" />
+      <span>Mike Dirnt</span>
+    </li>
+    <li>
+      <img src="images/trecool.jpg" alt="Tré Cool" class="character-image" />
+      <span>Tré Cool</span>
+    </li>
+  </ul>
+
+  <!-- Footer -->
+  <div id="footer">
+    <p>&copy; Greta Huber - 24224011, all rights reserved 2025</p>
+  </div>
+</body>
+
+</html>

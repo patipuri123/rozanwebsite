@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Template Credit Banner */
+.template-credit {
+  background-color: #1a1a1a;
+  color: #aaa;
+  font-size: 12px;
+  padding: 8px 20px;
+  text-align: right;
+  border-bottom: 1px solid #333;
+}
+
+.template-credit a {
+  color: limegreen;
+  text-decoration: none;
+}
+
+.template-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+}
+
+#header a.logo img {
+  height: 80px;
+}
+
+#navigation {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+#navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navigation li.selected a {
+  font-weight: bold;
+  color: limegreen;
+}
+
+/* Main Banner Image */
+#main-banner img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%);
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin: 40px 0 10px;
+}
+
+h1 span {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid limegreen;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Character Gallery */
+.character-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.character-gallery li {
+  text-align: center;
+  flex: 0 1 200px;
+}
+
+.character-image {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+.character-gallery span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 60%;
+  border-radius: 10px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#caption {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+/* Welcome Section */
+.welcome-text {
+  max-width: 900px;
+  margin: 40px auto 80px auto;
+  padding: 20px 30px;
+  background-color: rgba(50, 205, 50, 0.05);
+  border-radius: 12px;
+  color: #f5f5dc;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(50, 205, 50, 0.3);
+}
+
+.welcome-text h2 {
+  color: limegreen;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Container for the About page */
+.about {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about>h1>span {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.about img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about img:hover {
+  transform: scale(1.03);
+}
+
+.about .article {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.about .article h3 {
+  color: #2980b9;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  border-left: 5px solid #2980b9;
+  padding-left: 10px;
+}
+
+.about .article p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.about .article em {
+  font-style: italic;
+  color: #555;
+}
+
+.about .article p strong {
+  color: #2c3e50;
+}
+
+@media (max-width: 600px) {
+  .about>h1>span {
+    font-size: 2rem;
+  }
+
+  .about .article h3 {
+    font-size: 1.4rem;
+  }
+
+  .about .article p {
+    font-size: 1rem;
+  }
+}
+
+/* Container styling */
+#body {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main heading */
+/* About Page Title Styling */
+#body>h1>span {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #39ff14;
+  /* Neon green */
+  border: 3px solid #39ff14;
+  border-radius: 8px;
+  background-color: rgba(57, 255, 20, 0.05);
+  /* Light green tint */
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+  letter-spacing: 2px;
+  font-family: "Impact", sans-serif;
+  text-transform: uppercase;
+}
+
+
+/* Image styling */
+#body img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#body img:hover {
+  transform: scale(1.03);
+
+}
+
+/* Article container */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(0, 255, 0, 0.05);
+  /* subtle green tint */
+  border-left: 6px solid #39ff14;
+  /* neon green */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
+  /* green glow */
+  line-height: 1.8;
+}
+
+.article h3 {
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #39ff14;
+  font-family: "Impact", sans-serif;
+}
+
+.article p {
+  font-size: 17px;
+  color: #ccc;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.article em {
+  font-style: italic;
+  color: #8f8;
+}
+
+.article p strong {
+  color: #fff;
+}
+
+/* Green Day Gallery Page */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery li {
+  background-color: rgba(0, 255, 0, 0.02);
+  /* subtle green tint */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(57, 255, 20, 0.15);
+  /* soft green glow */
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  flex: 0 1 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(57, 255, 20, 0.25);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.gallery h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  color: #39ff14;
+  /* neon green */
+  font-family: "Impact", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallery h4 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.gallery p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: justify;
+}
